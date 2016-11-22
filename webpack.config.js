@@ -7,13 +7,15 @@ const path = require('path');
 module.exports = {
     context: __dirname + '/frontend',
     entry: {
-        index: "./index",
-        about: "./about",
-        common: "./common"
+        // index: "./index",
+        // about: "./about",
+        // common: "./common",
+        app: "./app"
         // welcome: "./welcome"
     },
     output: {
         path: __dirname + '/public/js',
+        publicPath: '/public/js/',
         filename: '[name].js',
         library: '[name]'
     },
